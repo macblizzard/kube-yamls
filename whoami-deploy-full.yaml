@@ -53,7 +53,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`whoami.k3s.dnahomelab.xyz`)
+    - match: Host(`whoami.example.com`)
       kind: Rule
       middlewares:
         - name: whoami-redirect-scheme
@@ -70,7 +70,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`whoami.k3s.dnahomelab.xyz`)
+    - match: Host(`whoami.example.com`)
       kind: Rule
       services:
         - name: whoami
