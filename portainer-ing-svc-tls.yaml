@@ -2,7 +2,7 @@
 # microk8s.enable community
 # microk8s.enable portainer
 # or, use helm chart without the service options: helm install --create-namespace -n portainer portainer portainer/portainer
-# then apply the following traefik template:
+# then apply the following manifest:
 
 apiVersion: v1
 kind: Service
